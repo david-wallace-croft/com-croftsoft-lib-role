@@ -1,6 +1,6 @@
 [package]
 name = "com-croftsoft-lib-role"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["David Wallace Croft <david@croftsoft.com>"]
 # Use the categories from https://crates.io/categories
 # categories = ["category-name"]

@@ -1,6 +1,7 @@
-pub trait Updater<C> {
-  fn update(
-    &mut self,
-    context: C,
-  );
+pub trait Painter {
+  fn paint(&self);
+}
+
+pub trait Updater {
+  fn update(&mut self);
 }
