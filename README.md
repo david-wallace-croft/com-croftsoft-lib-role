@@ -1,5 +1,6 @@
 # com-croftsoft-lib-role
 
+- CroftSoft Library for Roles
 - Reusable Rust traits
 
 ## History
