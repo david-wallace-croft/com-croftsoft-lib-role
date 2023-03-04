@@ -1,11 +1,11 @@
 // =============================================================================
-//! - com-croftsoft-lib-role
+//! - CroftSoft Roles Library
 //!
 //! # Metadata
 //! - Copyright: &copy; 2023 [`CroftSoft Inc`]
 //! - Author: [`David Wallace Croft`]
-//! - Version: 2023-01-21
-//! - Since: 2023-01-18
+//! - Created: 2023-01-18
+//! - Updated: 2023-03-03
 //!
 //! [`CroftSoft Inc`]: https://www.croftsoft.com/
 //! [`David Wallace Croft`]: https://www.croftsoft.com/people/david/
@@ -16,7 +16,7 @@ pub trait Initializer {
 }
 
 pub trait Painter {
-  fn paint(&self);
+  fn paint(&mut self);
 }
 
 pub trait Updater {
