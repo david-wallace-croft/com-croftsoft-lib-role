@@ -1,13 +1,13 @@
 [package]
 name = "com-croftsoft-lib-role"
-version = "0.2.1-SNAPSHOT"
+version = "0.3.0"
 authors = ["David Wallace Croft <david@CroftSoft.com>"]
 # Use the categories from https://crates.io/categories
 # categories = ["category-name"]
 description = "CroftSoft Library for Roles"
 edition = "2021"
 homepage = "https://www.CroftSoft.com/"
-# keywords = ["keyword"]
+keywords = ["roles"]
 license = "MIT"
 publish = false
 readme = "README.md"
