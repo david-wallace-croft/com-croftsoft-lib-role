@@ -2,10 +2,10 @@
 //! - CroftSoft Roles Library
 //!
 //! # Metadata
-//! - Copyright: &copy; 2023 [`CroftSoft Inc`]
+//! - Copyright: &copy; 2023-2024 [`CroftSoft Inc`]
 //! - Author: [`David Wallace Croft`]
 //! - Created: 2023-01-18
-//! - Updated: 2023-09-02
+//! - Updated: 2024-02-18
 //!
 //! [`CroftSoft Inc`]: https://www.croftsoft.com/
 //! [`David Wallace Croft`]: https://www.croftsoft.com/people/david/
@@ -41,4 +41,12 @@ pub trait Updater {
 
 pub trait UpdaterMut {
   fn update(&mut self);
+}
+
+pub trait Validator {
+  fn validate(&self);
+}
+
+pub trait ValidatorMut {
+  fn validate(&mut self);
 }
