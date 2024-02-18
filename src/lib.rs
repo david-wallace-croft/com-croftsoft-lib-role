@@ -43,10 +43,10 @@ pub trait UpdaterMut {
   fn update(&mut self);
 }
 
-pub trait Validator {
-  fn validate(&self);
+pub trait Validator<T> {
+  fn validate(&self) -> T;
 }
 
-pub trait ValidatorMut {
-  fn validate(&mut self);
+pub trait ValidatorMut<T> {
+  fn validate(&mut self) -> T;
 }
