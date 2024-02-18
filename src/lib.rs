@@ -43,6 +43,7 @@ pub trait UpdaterMut {
   fn update(&mut self);
 }
 
+// TODO: Use use unit type as default return type <T = ()>
 pub trait Validator<T> {
   fn validate(&self) -> T;
 }
