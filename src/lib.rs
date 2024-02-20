@@ -5,49 +5,48 @@
 //! - Copyright: &copy; 2023-2024 [`CroftSoft Inc`]
 //! - Author: [`David Wallace Croft`]
 //! - Created: 2023-01-18
-//! - Updated: 2024-02-18
+//! - Updated: 2024-02-19
 //!
 //! [`CroftSoft Inc`]: https://www.croftsoft.com/
 //! [`David Wallace Croft`]: https://www.croftsoft.com/people/david/
 // =============================================================================
 
-pub trait Initializer {
-  fn initialize(&self);
+pub trait Initializer<T = ()> {
+  fn initialize(&self) -> T;
 }
 
-pub trait InitializerMut {
-  fn initialize(&mut self);
+pub trait InitializerMut<T = ()> {
+  fn initialize(&mut self) -> T;
 }
 
-pub trait Painter {
-  fn paint(&self);
+pub trait Painter<T = ()> {
+  fn paint(&self) -> T;
 }
 
-pub trait PainterMut {
-  fn paint(&mut self);
+pub trait PainterMut<T = ()> {
+  fn paint(&mut self) -> T;
 }
 
-pub trait Preparer {
-  fn prepare(&self);
+pub trait Preparer<T = ()> {
+  fn prepare(&self) -> T;
 }
 
-pub trait PreparerMut {
-  fn prepare(&mut self);
+pub trait PreparerMut<T = ()> {
+  fn prepare(&mut self) -> T;
 }
 
-pub trait Updater {
-  fn update(&self);
+pub trait Updater<T = ()> {
+  fn update(&self) -> T;
 }
 
-pub trait UpdaterMut {
-  fn update(&mut self);
+pub trait UpdaterMut<T = ()> {
+  fn update(&mut self) -> T;
 }
 
-// TODO: Use use unit type as default return type <T = ()>
-pub trait Validator<T> {
+pub trait Validator<T = ()> {
   fn validate(&self) -> T;
 }
 
-pub trait ValidatorMut<T> {
+pub trait ValidatorMut<T = ()> {
   fn validate(&mut self) -> T;
 }
