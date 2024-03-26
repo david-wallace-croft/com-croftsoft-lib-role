@@ -12,6 +12,7 @@ license = "MIT"
 publish = true
 readme = "README.md"
 repository = "https://github.com/david-wallace-croft/com-croftsoft-lib-role"
+rust-version = "1.56.1"
 
 [dependencies]
 # No dependencies
