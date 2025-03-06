@@ -3,6 +3,8 @@ authors = ["David Wallace Croft <david@CroftSoft.com>"]
 # Use the categories from https://crates.io/categories
 # categories = ["category-name"]
 description = "CroftSoft Library for Roles"
+documentation = """\
+  https://docs.rs/com-croftsoft-lib-role/latest/com_croftsoft_lib_role/"""
 edition = "2024"
 homepage = "https://www.CroftSoft.com/"
 keywords = ["roles"]
